@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* боди- к чему применяется, фонт -  стиль-семейство, и в конце выбор */
+  color: #212121;
+  /* color: rgba(15, 104, 170, 0.5) ; */
+  /* 0.5 - это прозрачность 50% */
+  /* color: rgb */
+  /* color: #3aff; */
+  margin: 0;
+}
+h1 {
+  color: #3a95ff;
+  font-size: 52px;
+  /* 2em в два раза увеличенный текст */
+  text-align: center;
+  border: 5px solid #3a95ff;
+  /* solid - сплошная линия
+     dashed - штриховая линия */
+  padding: 50px 500px 100px 20px;
+  /*  внутренний отступ. отступы по часовой стрелке, можно одним задавать, двумя, четырьмя */
+  margin: 100px 200px;
+  /* внешний отступ */
+}
+
+.green {
+  background-color: #b2ff59;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px rgba(0, 200, 83, 0.7);
+}
+
+.double-line {
+  line-height: 2;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+img {
+  width: 30%;
+}
+
+/* стили блоков */
+.orange {
+  background-color: orange;
+}
+
+/* .orange img {
+  width: 33%;
+  margin: 0;
+  padding: 0;
+} */
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: powderblue;
+}
+
+.block {
+  width: 33%;
+  border-radius: 15px;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+}
