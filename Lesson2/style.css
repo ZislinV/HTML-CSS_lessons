@@ -14,51 +14,60 @@ ul {
 /* стили хэдера */
 header {
   background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
 }
 /* стили навигации */
 .main-menu {
   background-color: coral;
 }
+.main-menu-list {
+  height: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* Стили контентной части */
+.content {
+  display: flex;
+}
+
 section {
   background-color: rgb(23, 172, 110);
+  flex: 4; /* распределение в долях */
+  display: flex;
+  flex-wrap: wrap;
 }
 .section-item {
   background-color: darkred;
+  padding: 15px;
+  margin: 10px;
+  width: 50%;
+  box-sizing: border-box; /* теперь пэдинги и бордеры включены в ширину */
+  width: calc(50% - 20px);
 }
 /* стили сайдбара */
 .sidebar-right {
   background-color: darkslateblue;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.news {
+  background-color: plum;
 }
 /* стили футера */
 footer {
   background-color: dimgray;
-}
-
-/* Пробные стили */
-.orange {
-  /* height: 200px; */
-  background-color: orange;
+  height: 100px;
   display: flex;
-  justify-content: space-evenly; /* расположение блоков в родителе по горизонтале */
-  align-items: center; /* расположение блоков в родителе по вертикале */
-  flex-wrap: wrap; /* перенос на новую строку вытесненного контента */
-}
-.pink {
-  background-color: pink;
-  padding: 20px;
-  box-sizing: border-box; /* включает пэдинги и бордеры в ширину */
-  margin: 25px;
-}
-.block1,
-.block4 {
-  /* align-self: flex-start; */
-  width: 100%;
-}
-.block2,
-.block3 {
-  /* align-self: flex-end; */
-  /* width: 50%; */
-  width: calc(50% - 50px); /* с пробелами! */
+  justify-content: center;
+  align-items: center;
 }
