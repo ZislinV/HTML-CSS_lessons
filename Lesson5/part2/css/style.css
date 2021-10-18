@@ -1,0 +1,17 @@
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.my-bg-nav {
+  background-color: blue;
+}
+
+.my-text5 {
+  background-color: lightslategray;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
